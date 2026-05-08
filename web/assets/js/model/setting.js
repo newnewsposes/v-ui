@@ -3,7 +3,7 @@ class AllSetting {
     constructor(data) {
         this.webListen = "";
         this.webDomain = "";
-        this.webPort = 2053;
+        this.webPort = 2054;
         this.webCertFile = "";
         this.webKeyFile = "";
         this.webBasePath = "/";
@@ -35,7 +35,7 @@ class AllSetting {
         this.subEnableRouting = true;
         this.subRoutingRules = "";
         this.subListen = "";
-        this.subPort = 2096;
+        this.subPort = 2097;
         this.subPath = "/sub/";
         this.subJsonPath = "/json/";
         this.subClashEnable = true;
@@ -62,7 +62,7 @@ class AllSetting {
         // LDAP settings
         this.ldapEnable = false;
         this.ldapHost = "";
-        this.ldapPort = 389;
+        this.ldapPort = 387;
         this.ldapUseTLS = false;
         this.ldapBindDN = "";
         this.ldapPassword = "";
