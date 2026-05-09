@@ -3,14 +3,14 @@ package controller
 import (
 	"net/http"
 
-	"github.com/mhsanaei/3v-ui/v2/web/middleware"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
-	"github.com/mhsanaei/3v-ui/v2/web/session"
+	"github.com/newnewsposes/v-ui/v2/web/middleware"
+	"github.com/newnewsposes/v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/web/session"
 
 	"github.com/gin-gonic/gin"
 )
 
-// APIController handles the main API routes for the 3v-ui panel, including inbounds and server management.
+// APIController handles the main API routes for the v-ui panel, including inbounds and server management.
 type APIController struct {
 	BaseController
 	inboundController *InboundController

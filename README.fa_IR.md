@@ -2,33 +2,33 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./media/3v-ui-dark.png">
-    <img alt="3v-ui" src="./media/3v-ui-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="./media/v-ui-dark.png">
+    <img alt="v-ui" src="./media/v-ui-light.png">
   </picture>
 </p>
 
-[![Release](https://img.shields.io/github/v/release/mhsanaei/3v-ui.svg)](https://github.com/newnewsposes/3v-ui/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/mhsanaei/3v-ui/release.yml.svg)](https://github.com/newnewsposes/3v-ui/actions)
-[![GO Version](https://img.shields.io/github/go-mod/go-version/mhsanaei/3v-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/mhsanaei/3v-ui/total.svg)](https://github.com/newnewsposes/3v-ui/releases/latest)
+[![Release](https://img.shields.io/github/v/release/newnewsposes/v-ui.svg)](https://github.com/newnewsposes/v-ui/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/newnewsposes/v-ui/release.yml.svg)](https://github.com/newnewsposes/v-ui/actions)
+[![GO Version](https://img.shields.io/github/go-mod/go-version/newnewsposes/v-ui.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/newnewsposes/v-ui/total.svg)](https://github.com/newnewsposes/v-ui/releases/latest)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[![Go Reference](https://pkg.go.dev/badge/github.com/mhsanaei/3v-ui/v2.svg)](https://pkg.go.dev/github.com/mhsanaei/3v-ui/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mhsanaei/3v-ui/v2)](https://goreportcard.com/report/github.com/mhsanaei/3v-ui/v2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/newnewsposes/v-ui/v2.svg)](https://pkg.go.dev/github.com/newnewsposes/v-ui/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/newnewsposes/v-ui/v2)](https://goreportcard.com/report/github.com/newnewsposes/v-ui/v2)
 
-**3V-UI** — یک پنل کنترل پیشرفته مبتنی بر وب با کد باز که برای مدیریت سرور Xray-core طراحی شده است. این پنل یک رابط کاربری آسان برای پیکربندی و نظارت بر پروتکل‌های مختلف VPN و پراکسی ارائه می‌دهد.
+**v-ui** — یک پنل کنترل پیشرفته مبتنی بر وب با کد باز که برای مدیریت سرور Xray-core طراحی شده است. این پنل یک رابط کاربری آسان برای پیکربندی و نظارت بر پروتکل‌های مختلف VPN و پراکسی ارائه می‌دهد.
 
 > [!IMPORTANT]
 > این پروژه فقط برای استفاده شخصی و ارتباطات است، لطفاً از آن برای اهداف غیرقانونی استفاده نکنید، لطفاً از آن در محیط تولید استفاده نکنید.
 
-به عنوان یک نسخه بهبود یافته از پروژه اصلی V-UI، 3V-UI پایداری بهتر، پشتیبانی گسترده‌تر از پروتکل‌ها و ویژگی‌های اضافی را ارائه می‌دهد.
+به عنوان یک نسخه بهبود یافته از پروژه اصلی V-UI، v-ui پایداری بهتر، پشتیبانی گسترده‌تر از پروتکل‌ها و ویژگی‌های اضافی را ارائه می‌دهد.
 
 ## شروع سریع
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/v-ui/master/install.sh)
 ```
 
-برای مستندات کامل، لطفاً به [ویکی پروژه](https://github.com/newnewsposes/3v-ui/wiki) مراجعه کنید.
+برای مستندات کامل، لطفاً به [ویکی پروژه](https://github.com/newnewsposes/v-ui/wiki) مراجعه کنید.
 
 ## تشکر ویژه از
 
@@ -54,4 +54,4 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.
 
 ## ستاره‌ها در طول زمان
 
-[![Stargazers over time](https://starchart.cc/newnewsposes/3v-ui.svg?variant=adaptive)](https://starchart.cc/newnewsposes/3v-ui)
+[![Stargazers over time](https://starchart.cc/newnewsposes/v-ui.svg?variant=adaptive)](https://starchart.cc/newnewsposes/v-ui)

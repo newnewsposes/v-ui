@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/config"
 
 	"github.com/gin-gonic/gin"
 )

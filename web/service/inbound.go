@@ -1,4 +1,4 @@
-// Package service provides business logic services for the 3v-ui web panel,
+// Package service provides business logic services for the v-ui web panel,
 // including inbound/outbound management, user administration, settings, and Xray integration.
 package service
 
@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/mhsanaei/3v-ui/v2/database"
-	"github.com/mhsanaei/3v-ui/v2/database/model"
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/util/common"
-	"github.com/mhsanaei/3v-ui/v2/xray"
+	"github.com/newnewsposes/v-ui/v2/database"
+	"github.com/newnewsposes/v-ui/v2/database/model"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/util/common"
+	"github.com/newnewsposes/v-ui/v2/xray"
 
 	"gorm.io/gorm"
 )

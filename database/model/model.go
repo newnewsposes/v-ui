@@ -1,11 +1,11 @@
-// Package model defines the database models and data structures used by the 3v-ui panel.
+// Package model defines the database models and data structures used by the v-ui panel.
 package model
 
 import (
 	"fmt"
 
-	"github.com/mhsanaei/3v-ui/v2/util/json_util"
-	"github.com/mhsanaei/3v-ui/v2/xray"
+	"github.com/newnewsposes/v-ui/v2/util/json_util"
+	"github.com/newnewsposes/v-ui/v2/xray"
 )
 
 // Protocol represents the protocol type for Xray inbounds.
@@ -36,7 +36,7 @@ func IsHysteria(p Protocol) bool {
 	return p == Hysteria || p == Hysteria2
 }
 
-// User represents a user account in the 3v-ui panel.
+// User represents a user account in the v-ui panel.
 type User struct {
 	Id       int    `json:"id" gorm:"primaryKey;autoIncrement"`
 	Username string `json:"username"`
@@ -110,7 +110,7 @@ func (i *Inbound) GenXrayInboundConfig() *xray.InboundConfig {
 	}
 }
 
-// Setting stores key-value configuration settings for the 3v-ui panel.
+// Setting stores key-value configuration settings for the v-ui panel.
 type Setting struct {
 	Id    int    `json:"id" form:"id" gorm:"primaryKey;autoIncrement"`
 	Key   string `json:"key" form:"key"`

@@ -1,4 +1,4 @@
-// Package main is the entry point for the 3v-ui web panel application.
+// Package main is the entry point for the v-ui web panel application.
 // It initializes the database, web server, and handles command-line operations for managing the panel.
 package main
 
@@ -11,21 +11,21 @@ import (
 	"syscall"
 	_ "unsafe"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/database"
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/sub"
-	"github.com/mhsanaei/3v-ui/v2/util/crypto"
-	"github.com/mhsanaei/3v-ui/v2/util/sys"
-	"github.com/mhsanaei/3v-ui/v2/web"
-	"github.com/mhsanaei/3v-ui/v2/web/global"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/database"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/sub"
+	"github.com/newnewsposes/v-ui/v2/util/crypto"
+	"github.com/newnewsposes/v-ui/v2/util/sys"
+	"github.com/newnewsposes/v-ui/v2/web"
+	"github.com/newnewsposes/v-ui/v2/web/global"
+	"github.com/newnewsposes/v-ui/v2/web/service"
 
 	"github.com/joho/godotenv"
 	"github.com/op/go-logging"
 )
 
-// runWebServer initializes and starts the web server for the 3v-ui panel.
+// runWebServer initializes and starts the web server for the v-ui panel.
 func runWebServer() {
 	log.Printf("Starting %v %v", config.GetName(), config.GetVersion())
 
@@ -392,7 +392,7 @@ func GetListenIP(getListen bool) {
 	}
 }
 
-// migrateDb performs database migration operations for the 3v-ui panel.
+// migrateDb performs database migration operations for the v-ui panel.
 func migrateDb() {
 	inboundService := service.InboundService{}
 
@@ -405,7 +405,7 @@ func migrateDb() {
 	fmt.Println("Migration done!")
 }
 
-// main is the entry point of the 3v-ui application.
+// main is the entry point of the v-ui application.
 // It parses command-line arguments to run the web server, migrate database, or update settings.
 func main() {
 	if len(os.Args) < 2 {

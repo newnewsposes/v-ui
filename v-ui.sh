@@ -108,7 +108,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/3v-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/v-ui/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -127,7 +127,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/3v-ui/main/update.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/v-ui/main/update.sh)
     if [[ $? == 0 ]]; then
         LOGI "Update is complete, Panel has automatically restarted "
         before_show_menu
@@ -145,7 +145,7 @@ update_menu() {
         return 0
     fi
 
-    curl -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.sh
+    curl -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.sh
     chmod +x ${xui_folder}/v-ui.sh
     chmod +x /usr/bin/v-ui
 
@@ -167,7 +167,7 @@ legacy_version() {
         exit 1
     fi
     # Use the entered panel version in the download link
-    install_command="bash <(curl -Ls "https://raw.githubusercontent.com/mhsanaei/3v-ui/v$tag_version/install.sh") v$tag_version"
+    install_command="bash <(curl -Ls "https://raw.githubusercontent.com/newnewsposes/v-ui/v$tag_version/install.sh") v$tag_version"
 
     echo "Downloading and installing panel version $tag_version..."
     eval $install_command
@@ -206,7 +206,7 @@ uninstall() {
     echo ""
     echo -e "Uninstalled Successfully.\n"
     echo "If you need to install this panel again, you can use below command:"
-    echo -e "${green}bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.sh)${plain}"
+    echo -e "${green}bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/v-ui/master/install.sh)${plain}"
     echo ""
     # Trap the SIGTERM signal
     trap delete_script SIGTERM
@@ -630,7 +630,7 @@ enable_bbr() {
 }
 
 update_shell() {
-    curl -fLRo /usr/bin/v-ui -z /usr/bin/v-ui https://github.com/newnewsposes/3v-ui/raw/main/v-ui.sh
+    curl -fLRo /usr/bin/v-ui -z /usr/bin/v-ui https://github.com/newnewsposes/v-ui/raw/main/v-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Failed to download script, Please check whether the machine can connect Github"
@@ -2271,7 +2271,7 @@ show_usage() {
 show_menu() {
     echo -e "
 ╔────────────────────────────────────────────────╗
-│   ${green}3V-UI Panel Management Script${plain}                │
+│   ${green}v-ui Panel Management Script${plain}                │
 │   ${green}0.${plain} Exit Script                               │
 │────────────────────────────────────────────────│
 │   ${green}1.${plain} Install                                   │

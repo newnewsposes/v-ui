@@ -1,4 +1,4 @@
-// Package network provides network utilities for the 3v-ui web panel,
+// Package network provides network utilities for the v-ui web panel,
 // including automatic HTTP to HTTPS redirection functionality.
 package network
 

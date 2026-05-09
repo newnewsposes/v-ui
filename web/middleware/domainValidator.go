@@ -1,4 +1,4 @@
-// Package middleware provides HTTP middleware functions for the 3v-ui web panel,
+// Package middleware provides HTTP middleware functions for the v-ui web panel,
 // including domain validation and URL redirection utilities.
 package middleware
 

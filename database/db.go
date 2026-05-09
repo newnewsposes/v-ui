@@ -1,5 +1,5 @@
 // Package database provides database initialization, migration, and management utilities
-// for the 3v-ui panel using GORM with SQLite.
+// for the v-ui panel using GORM with SQLite.
 package database
 
 import (
@@ -12,10 +12,10 @@ import (
 	"path"
 	"slices"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/database/model"
-	"github.com/mhsanaei/3v-ui/v2/util/crypto"
-	"github.com/mhsanaei/3v-ui/v2/xray"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/database/model"
+	"github.com/newnewsposes/v-ui/v2/util/crypto"
+	"github.com/newnewsposes/v-ui/v2/xray"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

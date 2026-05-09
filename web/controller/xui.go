@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/mhsanaei/3v-ui/v2/web/middleware"
+	"github.com/newnewsposes/v-ui/v2/web/middleware"
 
 	"github.com/gin-gonic/gin"
 )

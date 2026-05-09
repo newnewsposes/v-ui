@@ -7,9 +7,9 @@ package service
 import (
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/util/common"
-	"github.com/mhsanaei/3v-ui/v2/web/websocket"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/util/common"
+	"github.com/newnewsposes/v-ui/v2/web/websocket"
 
 	"github.com/google/uuid"
 	ws "github.com/gorilla/websocket"

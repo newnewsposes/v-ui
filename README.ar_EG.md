@@ -2,33 +2,33 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./media/3v-ui-dark.png">
-    <img alt="3v-ui" src="./media/3v-ui-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="./media/v-ui-dark.png">
+    <img alt="v-ui" src="./media/v-ui-light.png">
   </picture>
 </p>
 
-[![Release](https://img.shields.io/github/v/release/mhsanaei/3v-ui.svg)](https://github.com/newnewsposes/3v-ui/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/mhsanaei/3v-ui/release.yml.svg)](https://github.com/newnewsposes/3v-ui/actions)
-[![GO Version](https://img.shields.io/github/go-mod/go-version/mhsanaei/3v-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/mhsanaei/3v-ui/total.svg)](https://github.com/newnewsposes/3v-ui/releases/latest)
+[![Release](https://img.shields.io/github/v/release/newnewsposes/v-ui.svg)](https://github.com/newnewsposes/v-ui/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/newnewsposes/v-ui/release.yml.svg)](https://github.com/newnewsposes/v-ui/actions)
+[![GO Version](https://img.shields.io/github/go-mod/go-version/newnewsposes/v-ui.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/newnewsposes/v-ui/total.svg)](https://github.com/newnewsposes/v-ui/releases/latest)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[![Go Reference](https://pkg.go.dev/badge/github.com/mhsanaei/3v-ui/v2.svg)](https://pkg.go.dev/github.com/mhsanaei/3v-ui/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mhsanaei/3v-ui/v2)](https://goreportcard.com/report/github.com/mhsanaei/3v-ui/v2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/newnewsposes/v-ui/v2.svg)](https://pkg.go.dev/github.com/newnewsposes/v-ui/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/newnewsposes/v-ui/v2)](https://goreportcard.com/report/github.com/newnewsposes/v-ui/v2)
 
-**3V-UI** — لوحة تحكم متقدمة مفتوحة المصدر تعتمد على الويب مصممة لإدارة خادم Xray-core. توفر واجهة سهلة الاستخدام لتكوين ومراقبة بروتوكولات VPN والوكيل المختلفة.
+**v-ui** — لوحة تحكم متقدمة مفتوحة المصدر تعتمد على الويب مصممة لإدارة خادم Xray-core. توفر واجهة سهلة الاستخدام لتكوين ومراقبة بروتوكولات VPN والوكيل المختلفة.
 
 > [!IMPORTANT]
 > هذا المشروع مخصص للاستخدام الشخصي والاتصال فقط، يرجى عدم استخدامه لأغراض غير قانونية، يرجى عدم استخدامه في بيئة الإنتاج.
 
-كمشروع محسن من مشروع V-UI الأصلي، يوفر 3V-UI استقرارًا محسنًا ودعمًا أوسع للبروتوكولات وميزات إضافية.
+كمشروع محسن من مشروع V-UI الأصلي، يوفر v-ui استقرارًا محسنًا ودعمًا أوسع للبروتوكولات وميزات إضافية.
 
 ## البدء السريع
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/v-ui/master/install.sh)
 ```
 
-للحصول على الوثائق الكاملة، يرجى زيارة [ويكي المشروع](https://github.com/newnewsposes/3v-ui/wiki).
+للحصول على الوثائق الكاملة، يرجى زيارة [ويكي المشروع](https://github.com/newnewsposes/v-ui/wiki).
 
 ## شكر خاص إلى
 
@@ -53,4 +53,4 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.
 
 ## النجوم عبر الزمن
 
-[![Stargazers over time](https://starchart.cc/newnewsposes/3v-ui.svg?variant=adaptive)](https://starchart.cc/newnewsposes/3v-ui)
+[![Stargazers over time](https://starchart.cc/newnewsposes/v-ui.svg?variant=adaptive)](https://starchart.cc/newnewsposes/v-ui)

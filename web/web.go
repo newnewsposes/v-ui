@@ -1,4 +1,4 @@
-// Package web provides the main web server implementation for the 3v-ui panel,
+// Package web provides the main web server implementation for the v-ui panel,
 // including HTTP/HTTPS serving, routing, templates, and background job scheduling.
 package web
 
@@ -16,16 +16,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/util/common"
-	"github.com/mhsanaei/3v-ui/v2/web/controller"
-	"github.com/mhsanaei/3v-ui/v2/web/job"
-	"github.com/mhsanaei/3v-ui/v2/web/locale"
-	"github.com/mhsanaei/3v-ui/v2/web/middleware"
-	"github.com/mhsanaei/3v-ui/v2/web/network"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
-	"github.com/mhsanaei/3v-ui/v2/web/websocket"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/util/common"
+	"github.com/newnewsposes/v-ui/v2/web/controller"
+	"github.com/newnewsposes/v-ui/v2/web/job"
+	"github.com/newnewsposes/v-ui/v2/web/locale"
+	"github.com/newnewsposes/v-ui/v2/web/middleware"
+	"github.com/newnewsposes/v-ui/v2/web/network"
+	"github.com/newnewsposes/v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/web/websocket"
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-contrib/sessions"
@@ -91,7 +91,7 @@ func EmbeddedAssets() embed.FS {
 	return assetsFS
 }
 
-// Server represents the main web server for the 3v-ui panel with controllers, services, and scheduled jobs.
+// Server represents the main web server for the v-ui panel with controllers, services, and scheduled jobs.
 type Server struct {
 	httpServer *http.Server
 	listener   net.Listener
@@ -228,7 +228,7 @@ func (s *Server) initRouter() (*gin.Engine, error) {
 		sessionOptions.MaxAge = sessionMaxAge * 60 // minutes -> seconds
 	}
 	store.Options(sessionOptions)
-	engine.Use(sessions.Sessions("3v-ui", store))
+	engine.Use(sessions.Sessions("v-ui", store))
 	engine.Use(func(c *gin.Context) {
 		c.Set("base_path", basePath)
 	})

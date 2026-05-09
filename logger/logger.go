@@ -1,4 +1,4 @@
-// Package logger provides logging functionality for the 3v-ui panel with
+// Package logger provides logging functionality for the v-ui panel with
 // dual-backend logging (console/syslog and file) and buffered log storage for web UI.
 package logger
 
@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/config"
 	"github.com/op/go-logging"
 )
 

@@ -1,4 +1,4 @@
-name: Release 3V-UI for Docker
+name: Release v-ui for Docker
 
 permissions:
   contents: read
@@ -24,8 +24,8 @@ jobs:
         uses: docker/metadata-action@v6
         with:
           images: |
-            hsanaeii/3v-ui
-            ghcr.io/mhsanaei/3v-ui
+            hsanaeii/v-ui
+            ghcr.io/newnewsposes/v-ui
           tags: |
             type=ref,event=branch
             type=ref,event=tag

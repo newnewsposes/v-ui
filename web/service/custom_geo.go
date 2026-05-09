@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/database"
-	"github.com/mhsanaei/3v-ui/v2/database/model"
-	"github.com/mhsanaei/3v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/database"
+	"github.com/newnewsposes/v-ui/v2/database/model"
+	"github.com/newnewsposes/v-ui/v2/logger"
 )
 
 const (

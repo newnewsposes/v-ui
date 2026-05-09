@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/mhsanaei/3v-ui/v2/web/session"
+	"github.com/newnewsposes/v-ui/v2/web/session"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,4 +1,4 @@
-// Package session provides session management utilities for the 3v-ui web panel.
+// Package session provides session management utilities for the v-ui web panel.
 // It handles user authentication state, login sessions, and session storage using Gin sessions.
 package session
 
@@ -6,8 +6,8 @@ import (
 	"encoding/gob"
 	"net/http"
 
-	"github.com/mhsanaei/3v-ui/v2/database/model"
-	"github.com/mhsanaei/3v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/database/model"
+	"github.com/newnewsposes/v-ui/v2/logger"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

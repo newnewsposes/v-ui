@@ -784,19 +784,19 @@ update_v-ui() {
 
     echo -e "${green}Downloading new v-ui version...${plain}"
 
-    tag_version=$(${curl_bin} -Ls "https://api.github.com/repos/newnewsposes/3v-ui/releases/latest" 2> /dev/null | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    tag_version=$(${curl_bin} -Ls "https://api.github.com/repos/newnewsposes/v-ui/releases/latest" 2> /dev/null | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     if [[ ! -n "$tag_version" ]]; then
         echo -e "${yellow}Trying to fetch version with IPv4...${plain}"
-        tag_version=$(${curl_bin} -4 -Ls "https://api.github.com/repos/newnewsposes/3v-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        tag_version=$(${curl_bin} -4 -Ls "https://api.github.com/repos/newnewsposes/v-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$tag_version" ]]; then
             _fail "ERROR: Failed to fetch v-ui version, it may be due to GitHub API restrictions, please try it later"
         fi
     fi
     echo -e "Got v-ui latest version: ${tag_version}, beginning the installation..."
-    ${curl_bin} -fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/newnewsposes/3v-ui/releases/download/${tag_version}/v-ui-linux-$(arch).tar.gz 2> /dev/null
+    ${curl_bin} -fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/newnewsposes/v-ui/releases/download/${tag_version}/v-ui-linux-$(arch).tar.gz 2> /dev/null
     if [[ $? -ne 0 ]]; then
         echo -e "${yellow}Trying to fetch version with IPv4...${plain}"
-        ${curl_bin} -4fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/newnewsposes/3v-ui/releases/download/${tag_version}/v-ui-linux-$(arch).tar.gz 2> /dev/null
+        ${curl_bin} -4fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/newnewsposes/v-ui/releases/download/${tag_version}/v-ui-linux-$(arch).tar.gz 2> /dev/null
         if [[ $? -ne 0 ]]; then
             _fail "ERROR: Failed to download v-ui, please be sure that your server can access GitHub"
         fi
@@ -859,10 +859,10 @@ update_v-ui() {
     chmod +x v-ui bin/xray-linux-$(arch) > /dev/null 2>&1
 
     echo -e "${green}Downloading and installing v-ui.sh script...${plain}"
-    ${curl_bin} -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.sh > /dev/null 2>&1
+    ${curl_bin} -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.sh > /dev/null 2>&1
     if [[ $? -ne 0 ]]; then
         echo -e "${yellow}Trying to fetch v-ui with IPv4...${plain}"
-        ${curl_bin} -4fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.sh > /dev/null 2>&1
+        ${curl_bin} -4fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.sh > /dev/null 2>&1
         if [[ $? -ne 0 ]]; then
             _fail "ERROR: Failed to download v-ui.sh script, please be sure that your server can access GitHub"
         fi
@@ -882,9 +882,9 @@ update_v-ui() {
 
     if [[ $release == "alpine" ]]; then
         echo -e "${green}Downloading and installing startup unit v-ui.rc...${plain}"
-        ${curl_bin} -fLRo /etc/init.d/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.rc > /dev/null 2>&1
+        ${curl_bin} -fLRo /etc/init.d/v-ui https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.rc > /dev/null 2>&1
         if [[ $? -ne 0 ]]; then
-            ${curl_bin} -4fLRo /etc/init.d/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.rc > /dev/null 2>&1
+            ${curl_bin} -4fLRo /etc/init.d/v-ui https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.rc > /dev/null 2>&1
             if [[ $? -ne 0 ]]; then
                 _fail "ERROR: Failed to download startup unit v-ui.rc, please be sure that your server can access GitHub"
             fi
@@ -938,13 +938,13 @@ update_v-ui() {
                 echo -e "${yellow}Service files not found in tar.gz, downloading from GitHub...${plain}"
                 case "${release}" in
                     ubuntu | debian | armbian)
-                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.service.debian > /dev/null 2>&1
+                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.service.debian > /dev/null 2>&1
                         ;;
                     arch | manjaro | parch)
-                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.service.arch > /dev/null 2>&1
+                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.service.arch > /dev/null 2>&1
                         ;;
                     *)
-                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.service.rhel > /dev/null 2>&1
+                        ${curl_bin} -4fLRo ${xui_service}/v-ui.service https://raw.githubusercontent.com/newnewsposes/v-ui/main/v-ui.service.rhel > /dev/null 2>&1
                         ;;
                 esac
 

@@ -1,4 +1,4 @@
-// Package sub provides subscription server functionality for the 3v-ui panel,
+// Package sub provides subscription server functionality for the v-ui panel,
 // including HTTP/HTTPS servers for serving subscription links and JSON configurations.
 package sub
 
@@ -15,13 +15,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/util/common"
-	webpkg "github.com/mhsanaei/3v-ui/v2/web"
-	"github.com/mhsanaei/3v-ui/v2/web/locale"
-	"github.com/mhsanaei/3v-ui/v2/web/middleware"
-	"github.com/mhsanaei/3v-ui/v2/web/network"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/util/common"
+	webpkg "github.com/newnewsposes/v-ui/v2/web"
+	"github.com/newnewsposes/v-ui/v2/web/locale"
+	"github.com/newnewsposes/v-ui/v2/web/middleware"
+	"github.com/newnewsposes/v-ui/v2/web/network"
+	"github.com/newnewsposes/v-ui/v2/web/service"
 
 	"github.com/gin-gonic/gin"
 )

@@ -13,8 +13,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/logger"
 )
 
 // PanelService provides business logic for panel management operations.
@@ -43,7 +43,7 @@ func (s *PanelService) RestartPanel(delay time.Duration) error {
 	return nil
 }
 
-// GetUpdateInfo checks GitHub for the latest 3v-ui release.
+// GetUpdateInfo checks GitHub for the latest v-ui release.
 func (s *PanelService) GetUpdateInfo() (*PanelUpdateInfo, error) {
 	latest, err := fetchLatestPanelVersion()
 	if err != nil {
@@ -73,7 +73,7 @@ func (s *PanelService) StartUpdate() error {
 	}
 
 	mainFolder, serviceFolder := resolveUpdateFolders()
-	updateScript := fmt.Sprintf("set -o pipefail; %s -fLs https://raw.githubusercontent.com/newnewsposes/3v-ui/main/update.sh | %s", shellQuote(curl), shellQuote(bash))
+	updateScript := fmt.Sprintf("set -o pipefail; %s -fLs https://raw.githubusercontent.com/newnewsposes/v-ui/main/update.sh | %s", shellQuote(curl), shellQuote(bash))
 
 	if systemdRun, err := exec.LookPath("systemd-run"); err == nil {
 		unitName := fmt.Sprintf("v-ui-web-update-%d", time.Now().Unix())
@@ -115,7 +115,7 @@ func (s *PanelService) StartUpdate() error {
 
 func fetchLatestPanelVersion() (string, error) {
 	client := &http.Client{Timeout: 10 * time.Second}
-	resp, err := client.Get("https://api.github.com/repos/newnewsposes/3v-ui/releases/latest")
+	resp, err := client.Get("https://api.github.com/repos/newnewsposes/v-ui/releases/latest")
 	if err != nil {
 		return "", err
 	}

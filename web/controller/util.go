@@ -7,10 +7,10 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/mhsanaei/3v-ui/v2/config"
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/web/entity"
-	"github.com/mhsanaei/3v-ui/v2/web/session"
+	"github.com/newnewsposes/v-ui/v2/config"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/web/entity"
+	"github.com/newnewsposes/v-ui/v2/web/session"
 
 	"github.com/gin-gonic/gin"
 )

@@ -3,11 +3,11 @@ package service
 import (
 	"errors"
 
-	"github.com/mhsanaei/3v-ui/v2/database"
-	"github.com/mhsanaei/3v-ui/v2/database/model"
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/util/crypto"
-	ldaputil "github.com/mhsanaei/3v-ui/v2/util/ldap"
+	"github.com/newnewsposes/v-ui/v2/database"
+	"github.com/newnewsposes/v-ui/v2/database/model"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/util/crypto"
+	ldaputil "github.com/newnewsposes/v-ui/v2/util/ldap"
 	"github.com/xlzd/gotp"
 	"gorm.io/gorm"
 )

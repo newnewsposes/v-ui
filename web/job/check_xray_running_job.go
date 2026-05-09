@@ -1,10 +1,10 @@
-// Package job provides background job implementations for the 3v-ui web panel,
+// Package job provides background job implementations for the v-ui web panel,
 // including traffic monitoring, system checks, and periodic maintenance tasks.
 package job
 
 import (
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/web/service"
 )
 
 // CheckXrayRunningJob monitors Xray process health and restarts it if it crashes.

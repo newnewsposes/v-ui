@@ -2,8 +2,8 @@
 package websocket
 
 import (
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/web/global"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/web/global"
 )
 
 // GetHub returns the global WebSocket hub instance.

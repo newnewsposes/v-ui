@@ -1,4 +1,4 @@
-// Package config provides configuration management utilities for the 3v-ui panel,
+// Package config provides configuration management utilities for the v-ui panel,
 // including version information, logging levels, database paths, and environment variable handling.
 package config
 
@@ -30,12 +30,12 @@ const (
 	Error   LogLevel = "error"
 )
 
-// GetVersion returns the version string of the 3v-ui application.
+// GetVersion returns the version string of the v-ui application.
 func GetVersion() string {
 	return strings.TrimSpace(version)
 }
 
-// GetName returns the name of the 3v-ui application.
+// GetName returns the name of the v-ui application.
 func GetName() string {
 	return strings.TrimSpace(name)
 }

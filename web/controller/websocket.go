@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
-	"github.com/mhsanaei/3v-ui/v2/web/session"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/web/session"
 
 	"github.com/gin-gonic/gin"
 	ws "github.com/gorilla/websocket"

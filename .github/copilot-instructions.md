@@ -1,7 +1,7 @@
-# 3V-UI Development Guide
+# v-ui Development Guide
 
 ## Project Overview
-3V-UI is a web-based control panel for managing Xray-core servers. It's a Go application using Gin web framework with embedded static assets and SQLite database. The panel manages VPN/proxy inbounds, monitors traffic, and provides Telegram bot integration.
+v-ui is a web-based control panel for managing Xray-core servers. It's a Go application using Gin web framework with embedded static assets and SQLite database. The panel manages VPN/proxy inbounds, monitors traffic, and provides Telegram bot integration.
 
 ## Architecture
 
@@ -33,7 +33,7 @@
 
 ### Building & Running
 ```bash
-# Build (creates bin/3v-ui.exe)
+# Build (creates bin/v-ui.exe)
 go run tasks.json → "go: build" task
 
 # Run with debug logging

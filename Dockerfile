@@ -19,7 +19,7 @@ RUN go build -ldflags "-w -s" -o build/v-ui main.go
 RUN ./DockerInit.sh "$TARGETARCH"
 
 # ========================================================
-# Stage: Final Image of 3v-ui
+# Stage: Final Image of v-ui
 # ========================================================
 FROM alpine
 ENV TZ=Asia/Tehran

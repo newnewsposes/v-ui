@@ -1,7 +1,7 @@
 package job
 
 import (
-	"github.com/mhsanaei/3v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/web/service"
 )
 
 // LoginStatus represents the status of a login attempt.

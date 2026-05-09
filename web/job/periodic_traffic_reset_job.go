@@ -1,8 +1,8 @@
 package job
 
 import (
-	"github.com/mhsanaei/3v-ui/v2/logger"
-	"github.com/mhsanaei/3v-ui/v2/web/service"
+	"github.com/newnewsposes/v-ui/v2/logger"
+	"github.com/newnewsposes/v-ui/v2/web/service"
 )
 
 // Period represents the time period for traffic resets.

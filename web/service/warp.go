@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mhsanaei/3v-ui/v2/util/common"
+	"github.com/newnewsposes/v-ui/v2/util/common"
 )
 
 // WarpService provides business logic for Cloudflare WARP integration.
