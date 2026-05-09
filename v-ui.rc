@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+
+command="/usr/local/v-ui/v-ui"
+command_background=true
+pidfile="/run/v-ui.pid"
+description="v-ui Service"
+procname="v-ui"
+depend() {
+    need net
+}
+start_pre(){
+    cd /usr/local/v-ui
+}
+reload() {
+  ebegin "Reloading ${RC_SVCNAME}"
+  kill -USR1  $pidfile
+  eend $?
+}

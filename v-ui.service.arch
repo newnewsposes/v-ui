@@ -1,0 +1,17 @@
+[Unit]
+Description=v-ui Service
+After=network.target
+Wants=network.target
+
+[Service]
+EnvironmentFile=-/etc/conf.d/v-ui
+Environment="XRAY_VMESS_AEAD_FORCED=false"
+Type=simple
+WorkingDirectory=/usr/lib/v-ui/
+ExecStart=/usr/lib/v-ui/v-ui
+ExecReload=kill -USR1 $MAINPID
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
