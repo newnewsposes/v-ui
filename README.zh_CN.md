@@ -7,10 +7,10 @@
   </picture>
 </p>
 
-[![Release](https://img.shields.io/github/v/release/mhsanaei/3v-ui.svg)](https://github.com/MHSanaei/3v-ui/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/mhsanaei/3v-ui/release.yml.svg)](https://github.com/MHSanaei/3v-ui/actions)
+[![Release](https://img.shields.io/github/v/release/mhsanaei/3v-ui.svg)](https://github.com/newnewsposes/3v-ui/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/mhsanaei/3v-ui/release.yml.svg)](https://github.com/newnewsposes/3v-ui/actions)
 [![GO Version](https://img.shields.io/github/go-mod/go-version/mhsanaei/3v-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/mhsanaei/3v-ui/total.svg)](https://github.com/MHSanaei/3v-ui/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/mhsanaei/3v-ui/total.svg)](https://github.com/newnewsposes/3v-ui/releases/latest)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Go Reference](https://pkg.go.dev/badge/github.com/mhsanaei/3v-ui/v2.svg)](https://pkg.go.dev/github.com/mhsanaei/3v-ui/v2)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mhsanaei/3v-ui/v2)](https://goreportcard.com/report/github.com/mhsanaei/3v-ui/v2)
@@ -28,7 +28,7 @@
 bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.sh)
 ```
 
-完整文档请参阅 [项目Wiki](https://github.com/MHSanaei/3v-ui/wiki)。
+完整文档请参阅 [项目Wiki](https://github.com/newnewsposes/3v-ui/wiki)。
 
 ## 特别感谢
 
@@ -43,7 +43,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.
 
 **如果这个项目对您有帮助，您可以给它一个**:star2:
 
-<a href="https://www.buymeacoffee.com/MHSanaei" target="_blank">
+<a href="https://www.buymeacoffee.com/newnewsposes" target="_blank">
 <img src="./media/default-yellow.png" alt="Buy Me A Coffee" style="height: 70px !important;width: 277px !important;" >
 </a>
 
@@ -54,4 +54,4 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3v-ui/master/install.
 
 ## 随时间变化的星标数
 
-[![Stargazers over time](https://starchart.cc/MHSanaei/3v-ui.svg?variant=adaptive)](https://starchart.cc/MHSanaei/3v-ui)
+[![Stargazers over time](https://starchart.cc/newnewsposes/3v-ui.svg?variant=adaptive)](https://starchart.cc/newnewsposes/3v-ui)

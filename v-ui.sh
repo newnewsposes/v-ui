@@ -108,7 +108,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3v-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/3v-ui/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -127,7 +127,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3v-ui/main/update.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/newnewsposes/3v-ui/main/update.sh)
     if [[ $? == 0 ]]; then
         LOGI "Update is complete, Panel has automatically restarted "
         before_show_menu
@@ -145,7 +145,7 @@ update_menu() {
         return 0
     fi
 
-    curl -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/MHSanaei/3v-ui/main/v-ui.sh
+    curl -fLRo /usr/bin/v-ui https://raw.githubusercontent.com/newnewsposes/3v-ui/main/v-ui.sh
     chmod +x ${xui_folder}/v-ui.sh
     chmod +x /usr/bin/v-ui
 
@@ -630,7 +630,7 @@ enable_bbr() {
 }
 
 update_shell() {
-    curl -fLRo /usr/bin/v-ui -z /usr/bin/v-ui https://github.com/MHSanaei/3v-ui/raw/main/v-ui.sh
+    curl -fLRo /usr/bin/v-ui -z /usr/bin/v-ui https://github.com/newnewsposes/3v-ui/raw/main/v-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Failed to download script, Please check whether the machine can connect Github"
